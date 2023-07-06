@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Bebas Neue';
+}
+body{
+  
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  
+  justify-content: center;
+}
+
+
+ .toolbar h1 {
+  font-family: 'Bebas Neue';
+  
+  color: #fff;
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 100px;
+  position: absolute;
+  top: -45%; left: 55.5%;
+  transform: translate(5%, 50%);  
+  
+}
+
+.toolbar h2 {
+  font-family: 'Bebas Neue';
+  
+  color: #fff;
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 80px;
+  position: absolute;
+  top: 170%; left: 61%;
+  transform: translate(5%, 50%);  
+  
+}
+
+.toolbar {
+  background: transparent;
+  width: 2458px;
+  height: 70px;  
+  color: #fff;
+  top: 10%;
+  left: 10%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+
+}
+
+.toolbar .bar{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  left: 48%;
+}
+
+.upload .back{
+  margin-bottom: 1px;
+  font-family: 'Bebas Neue';
+  font-size: 25px;
+  position: absolute;
+  top: 80%;
+  left: 550px;
+}
+
+.upload .Tryto{
+  margin-bottom: 1px;
+  font-family: 'Bebas Neue';
+  font-size: 25px;
+  position: absolute;
+  top: 90%;
+  left: 550px;
+}
+
+.upload input[type="submit"] {
+  width: 20%;
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #2596be;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+  font-family: 'Bebas Neue';
+
+}
+
+
+.upload input[type="submit"]:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+  font-family: 'Bebas Neue';
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+
+    <title>WEBPLAYER | ON MY HEAD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css"> 
+    
+</head>
+
+<body>
+
+<div class="bar">  
+
+</div>
+<!---
+    <form method="link" action="D:/xampp/htdocs/ONMYHEAD/interfaces/html/playlist.html">
+
+        <div class="toolba">
+      <input input src="D:/xampp/htdocs/ONMYHEAD/interfaces/html/playlist.html" class="reg" type="submit" value="PLAYLIST!">
+      
+
+</form>
+       
+        <form method="link" action="../php/cancion.php">
+       
+<input input src="../php/cancion.php" class="log" type="submit" value="FAVORITES!">--->
+  
+</form>
+
+  <form method="link" action="D:/xampp/htdocs/ONMYHEAD/interfaces/html/favorites.html">
+       
+</div>
+</form>
+
+<div class="toolbar">
+      <img src="../invitado/recursos/onmyhead.png" class="user" alt="ON MY HEAD">  
+
+ </div>
+ <!--- <div class="main"> --->
+<!--- right part leftxd --->
+     <div class="left">
+
+        <div class="show_song_no">
+          <p id="present">1</p>
+          <p>/</p>
+          <p id="total">5</p>
+        </div>
+
+       <!--- song title & artist name --->
+      <p id="title">title.mp3</p>
+      <p id="artist">Artist name</p>
+      <p id="album">Album name</p>
+      
+
+      <!--- middle part --->
+        <div class="middle">
+           <button onclick="previous_song()" id="pre"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+           <button onclick="justplay()" id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
+           <button onclick="next_song()" id="next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+       </div>
+
+       <!--- song duration part --->
+        <div class="duration">
+           <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+        </div>
+           <button id="auto" onclick="autoplay_switch()">Auto play <i class="fa fa-circle-o-notch" aria-hidden="true"></i></button>
+    </div>
+     
+    <!--- left part --->
+     <div class="right">
+
+      <!--- song img --->
+      <img id="track_image">
+         <div class="volume">
+            <p id="volume_show">100</p>
+            <i class="fa fa-volume-up" aria-hidden="true" onclick="mute_sound()" id="volume_icon"></i>
+            <input type="range" min="0" max="100" value="100" onchange="volume_change()" id="volume">  
+         </div>
+
+     </div>
+ 
+
+
+ <!--- </div> --->
+   
+  <!--- Add javascript file --->
+  <script src="../webplayer/script.js"></script><br><br>
+ 
+</body>
+<a class="ce" href="../php/Cerrar.php" onclick="return cerrar()">SING OFF! </a><br>
+<a class="el" href="../php/eliminar.php" onclick="return eliminar()">DELETE ACCOUNT!</a>
+</html>

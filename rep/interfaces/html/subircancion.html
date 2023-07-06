@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <title>UPLOAD SONGS! | ON MY HEAD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/estilosubircancion.css">
+</head>
+
+<body>
+
+
+
+<div class="upload"> 
+        <form method="POST" action="../php/registrarcancion.php">
+        
+
+        <label for="titulo">TITLE</label>
+        <input type="text" id="titulo" name="titulo" placeholder="Titulo" >
+        
+        <label for="album">ALBUM</label>
+        <input type="text" id="album" name="album" placeholder="Album">
+
+        <label for="img">URL OF COVER</label>
+        <input type="text" id="img" name="img" placeholder="Url of cover">
+
+        <label for="url">URL OF SONG</label>
+        <input type="text" id="url" name="url" placeholder="Url os song">
+
+        <input type="submit" value="Upload now!"> 
+      </form>
+      <form method="link" action="paneladmin.html">
+        <input src="paneladmin.html" type="submit" value="Back">
+      </form>
+      <form method="link" action="../php/cancion.php">
+        <input src="../php/cancion.php" type="submit" value="Try to listen">
+      </form>
+       <form method="POST" action="../php/transacciones.php">
+        
+</div>
+
+
+<div class="toolbar">
+      <img src="../css/recursos/onmyhead.png" class="user" alt="ON MY HEAD"> 
+       
+       <h1>UPLOAD NEW SONGS!</h1>
+     </div>
+<div class="bar"> 
+
+	
+
+</div>
+
+  <!--- Add php file --->
+  <form   action="php/admin.php"  method="POST">
+
+</body>
+</html>
